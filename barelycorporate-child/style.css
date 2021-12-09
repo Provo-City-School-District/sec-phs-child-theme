@@ -1,0 +1,467 @@
+/*
+Theme Name: Your Child Theme
+Description: Child theme for the Theme Blvd framework
+Author: Your name here
+Template: barelycorporate
+*/
+
+/*
+Note: The parent theme does not include any CSS in
+style.css, and so you don't need to @import it here.
+*/
+
+/* Add your custom CSS here. */
+html, body {
+	font-family: Candara, "Bitstream Vera Sans", "DejaVu Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	font-size: 15px;
+}
+.grecaptcha-badge {display: none;visibility: hidden;}
+
+a {color: #142471;}
+a:hover {color: #182b85;}
+#top {
+	background-color: #15804f;
+	background-image: url(https://provohigh.provo.edu/wp-content/themes/barelycorporate/framework/assets/images/textures/leather.png);
+}
+a {
+	color: #142471;
+}
+video {
+	width: 100%;
+}
+#access li a {
+	margin-right: 1.9px;
+	padding: 14px 18px;
+}
+.visuallyhidden {
+	position: absolute;
+	left: -9000px;
+}
+.menu_center #access ul li {
+
+}
+#access li li a {font-size: 12px; color: #15804f; }
+#access li li:hover {background: #fff!important;}
+#access li li a:hover {color: #15804f;}
+#access li a:hover {background: #efe4b0!important;color: #15804f;}
+#access ul ul {background: #efe4b0!important;}
+#access ul ul li a:hover {background: #fff!important;}
+#top #branding {border-bottom: 7px solid #efe4b0;}
+#container {
+	background-image:url(https://provohigh.provo.edu/wp-content/img/bg.jpg);
+}
+#main {
+	background-image:url(https://provohigh.provo.edu/wp-content/img/bg.jpg);
+}
+/*
+#featured{
+	background-image:url(https://provohigh.provo.edu/wp-content/img/featured-bkg.jpg), url(https://provohigh.provo.edu/wp-content/img/bg.jpg);
+	background-repeat: no-repeat, repeat;
+	background-position: center top, left top;
+}
+*/
+#featured{
+	background-image: url(https://provohigh.provo.edu/wp-content/img/bg.jpg);
+	background-repeat: repeat;
+	background-position: left top;
+}
+#featured .element {
+	padding: 0 0 0px 0;
+}
+#featured .flexslider .slides img {height: 288px;}
+p.contactinfo {
+	text-align: center;
+	margin: 10px 0px 10px 0px;
+	font-size: 100%;
+}
+p.contactinfo span {
+	margin: 0 0 0 390px;
+}
+.btn {
+	float: right;
+}
+.widget ul li a {
+	color: #142471;
+}
+.entry-meta {
+	font-size: 70%;
+}
+table {width:100%;}
+table tr td{
+	padding: 10px;
+	border: 1px solid #000;
+}
+table tr th {
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid #000;
+}
+.greyshade {background:#eee;}
+.main-nav-end ul {left: -105px!important;}
+.main-nav-end ul ul{left: -105%!important;}
+.directwarn {
+	text-align: center;
+	font-size: 24px;
+
+}
+.emergencynotif {
+	font-size: 30px;
+	text-align: center;
+}
+.safeutimages {
+	border-radius: 6px;
+	border: 1px #ccc solid;
+	margin-bottom: 15px;
+}
+.syllabus {
+	float: right;
+	border: 1px solid #ccc;
+	padding: 0px 20px 0 20px;
+	margin: 0 0 20px 20px;
+}
+.article-wrap .syllabus h2 {
+	margin-top: 10px;
+}
+img.staff-member-photo {
+    float: none!important;
+}
+/*
+---------------------------------------------column---------------------------------------------------------------
+*/
+/*
+---------------------------------------------Headings---------------------------------------------------------------
+*/
+h1,h2,h3,h4,h5,h6{
+	clear:both;
+	font-weight:bold;
+	font-family: HelveticaNeue-CondensedBold, "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+h1{
+	color: #142470!important;
+	font-size:1.75em;
+	font-family: HelveticaNeue-CondensedBold, "Arial Narrow", Arial, Helvetica, sans-serif;
+	line-height:1.15em;
+	margin:.5em 0 1em 0;
+}
+h1 a {
+	color: #142470!important;
+	font-family: HelveticaNeue-CondensedBold, "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+h2{
+	color: #15804f!important;
+	font-size:1.5em;
+	font-family: HelveticaNeue-CondensedBold, "Arial Narrow", Arial, Helvetica, sans-serif;
+	line-height:1.15em;
+	margin:15px 0 15px 0;
+}
+h3{
+	color: #15804f!important;
+	font-size:1.25em;
+	line-height:1.15em;
+	margin:.5em 0 1em 0;
+}
+/*
+---------------------------------------------footer---------------------------------------------------------------
+*/
+#footer_content .textwidget ul li {
+	font-size: 12px;
+	margin-top: 10px;
+}
+#footer_content .textwidget p {
+	font-size: 12px;
+}
+#footer_content label {
+	font-size: 12px;
+}
+#footer_content #loginform1 {
+	margin-top: 5px;
+}
+#footer_content #loginform1 input {
+	margin-top: 10px;
+	width: 161px;
+}
+#footer_content #loginform1 label{
+	margin-bottom: -5px;
+}
+#footer_content .wpp-list li {
+	margin-top: 15px;
+	margin-bottom:15px;
+}
+#footer_content .textwidget ul li.largetext a {
+	font-size: 16px;
+}
+.beliefstatement {
+	font-size: 12px;
+	margin-left: -40px;
+}
+.beliefstatement li {
+	list-style: none;
+	margin-top: 10px;
+}
+/*
+---------------------------------------------Custom Styles---------------------------------------------------------------
+*/
+
+.clear {
+	clear: both;
+}
+.clearnone {
+	clear: none;
+}
+.right {
+	float: right;
+	margin-bottom: 15px;
+}
+.left {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+.noblt {
+	list-style: none;
+}
+.center {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+.iblogo {
+	margin: 20px 0 0 0;
+}
+.columnleft {
+	float: left;
+	width: 270px;
+	padding: 10px;
+	margin: 10px 0 10px 0;
+}
+.columnright {
+	float: left;
+	width: 270px;
+	padding: 10px;
+	margin: 10px 0 10px 0;
+}
+.bottom {clear: both;}
+.sociallinks li {
+	display: inline-block;
+}
+.sociallinks li img {
+	width: 75px;
+}
+.collapseomatic {color:#142471; font-size: 1.25em;display: block;}
+.collapseomatic:hover { text-decoration: none!important; color:#6573B9!important;}
+h3.extrasearchheader {margin-top: 30px!important;}
+/*=============================================
+Simple list Teacher Course Directory Styles
+===============================================*/
+.staff-member-listing {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.staff-member-listing .personalvCard {
+	width: 33.2%;
+	text-align: center;
+	border: none;
+	border-radius: 0;
+	padding: 15px 5px 5px 5px;
+}
+.staff-member-listing .personalvCard:nth-child(even) {
+	background-color: #dbe1e7;
+}
+.staff-member-listing .personalvCard:nth-child(odd) {
+	background-color: #e7f0eb;
+}
+.staff-member-listing .personalvCard img {
+	max-width: 100px;
+	max-height: 125px;
+}
+.staff-member-listing .personalvCard ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+
+
+
+/*=============================================
+Teacher Course Directory Styles
+===============================================
+.directoryHeadImage {margin-bottom: 15px;}
+.directoryHidden {display: none;}
+.directoryActive {display: block;}
+#form1 option {font-size: 20px;}
+.directoryprofile {
+	width: 100%;
+	background-color: #f8f8f8;
+	background:-webkit-gradient(linear,left bottom,left top,from(#f6f6f6),to(#fff));
+	border-radius: 4px;
+	border: 1px #fff solid;
+	padding: 10px 5px 10px 10px;
+	box-shadow: 1px 1px 5px #ccc;
+	margin-bottom: 20px;
+}
+.directoryprofile h2 {margin-top: 0;}
+.directoryprofile img {
+	padding: 8px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	box-shadow:3px 4px 5px rgba(0, 0, 0, .2);
+	max-width:116px;
+	float: left;
+}
+.directoryprofile .information {
+	float: left;
+	max-width: 36%;
+	margin: 0 2% 0 1%;
+}
+.directoryprofile .information ul li {list-style: none;margin-bottom: 20px;}
+.directoryprofile .information ul li:last-child {margin-bottom: 0px;}
+.directoryprofile .courses {
+	float: left;
+	width: 34%;
+	margin: 0 1% 0 1%;
+
+}
+.directoryprofile .courses ul li {
+	font-size: 0.8em;
+	list-style: none;
+}
+/*=============================================
+Admin Office Directory Styles
+===============================================
+.contactpage {
+	width: 48%;
+	background-color: #f8f8f8;
+	background:-webkit-gradient(linear,left bottom,left top,from(#f6f6f6),to(#fff));
+	border-radius: 4px;
+	margin: 0 5px 15px 5px;
+	border: 1px #fff solid;
+	float: left;
+	padding: 10px 5px 10px 10px;
+	box-shadow: 1px 1px 5px #ccc;
+}
+.contactpage img {
+	float: left;
+	margin: 0 0px 5px 0;
+	padding: 8px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+
+	max-height: 140px;
+	box-shadow:3px 4px 5px rgba(0, 0, 0, .2);
+}
+.contactpage ul {
+	float: left;
+	width: 63%;
+	margin-top: -10px!important;
+	margin-left: -20px!important;
+	list-style: none;
+	font-size: 0.8em;
+}
+.contactpage ul li:first-child {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.contactpage ul li:nth-child(2) {
+	font-style: italic;
+	font-size: 1em;
+}
+.contactpage ul li:nth-child(3), .contactpage ul li:nth-child(4), .contactpage ul li:nth-child(5), .contactpage ul li:nth-child(6),  .contactpage ul li:nth-child(7), .contactpage ul li:nth-child(8)  {
+	font-size: 1em;
+}
+.contactpage p {
+	font-size: 0.9em;
+	margin-top: 30px;
+}
+
+/*
+----------------------------------------teacher page Styles--------------------------------------------------------------
+*/
+.syllabus {
+	float: right;
+	width: 200px;
+	border: 1px solid #ccc;
+	margin: 0 0 20px 20px;
+	padding: 5px 20px 20px 20px;
+	border-radius: 3px;
+}
+/*
+----------------------------------------Gallery Styles--------------------------------------------------------------
+*/
+.gallery .gallery-item .gallery-icon {
+	max-height: 130px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+/*
+-----------------------James Rees------------------------
+*/
+.menu-james-rees-menu-container {
+	background-color: transparent!important;
+	border: none!important;
+	box-shadow: none!important;
+
+}
+.menu-james-rees-menu-container ul {
+	text-align: center;
+
+}
+ul#menu-james-rees-menu li {
+	margin: 20px 15px 0px 15px;
+	display: inline-block;
+	font-size: 18px;
+
+}
+/*
+----------------------------------------Tiles--------------------------------------------------------------
+*/
+.tiles-container {
+	display:flex;
+	flex-wrap:wrap;
+	
+}
+.tiles-container .tile {
+	width: 33%;
+	padding:20px 3%;
+}
+
+
+
+@media screen and (max-width: 922px) {
+	p.contactinfo span {
+		margin: 10px 0 0 0;
+		display: block
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.contactpage {width: 100%;}
+}
+/*
+----------------------------------------Search Styles--------------------------------------------------------------
+*/
+.search-filters-mobile-button {display: none;}
+.search-filters {float: right; width: 256px;}
+.search-results-item {float: left; width: calc(100% - 256px);list-style: none; margin-top: 30px;}
+.search-results-item:after {content: ""; display: block; width: 100%;border-bottom: 1px solid #ccc; margin-top: 20px;}
+.search_page_list {
+	margin-top: 30px;
+	float: right;
+}
+.search_page_list li {
+	list-style: none;
+	display: inline;
+}
+/*
+----------------------------------------Print Styles--------------------------------------------------------------
+*/
+@media print {
+	#top {display: none !important;}
+	.contactinfo {display: none;}
+	#main .main-content {width: 90%;}
+	a[href]:after {content: none !important;}
+  	@page {
+    	size: auto;   /* auto is the initial value */
+		margin: 0;  /* this affects the margin in the printer settings */
+	}
+}

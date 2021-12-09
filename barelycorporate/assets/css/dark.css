@@ -1,0 +1,198 @@
+/* =Framework
+----------------------------------------------- */
+
+/* Dark version of framework styles */
+@import url('../../framework/assets/css/themeblvd-dark.min.css');
+
+/* =Layout Boxes
+----------------------------------------------- */
+
+.boxed-layout .boxed-inner,
+article,
+.element-slider-standard .element-inner,
+.element-slider-nivo .element-inner,
+.element-content .element-inner,
+.element-post_grid_slider .element-inner,
+.element-post_list_slider .element-inner,
+.element-slogan .element-inner,
+.element-tweet .element-inner,
+.element-columns .element-inner,
+#comments .comment-body,
+#respond {
+	background-color: #3a3a3a;
+}
+
+/* =Global Elements and Typography
+-------------------------------------------------------------- */
+
+body {
+	background: #3a3a3a;
+	color: #ffffff;
+}
+hr {
+	background-color: #000000;
+}
+
+/* Button styles (needed to override framework's themeblvd-dark.css) */
+.btn-default,
+.btn-default:active,
+.btn-default:hover,
+.btn-default:focus {
+	background-image: url(../images/button-shade.png);
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	border-style: solid;
+	border-width: 1px;
+	color: #ffffff;
+	text-shadow: none;
+}
+.btn-default:hover,
+.btn-default:focus {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+/* =Content
+----------------------------------------------- */
+
+.entry-header {
+	border-color: #000000;
+}
+.entry-title,
+.entry-title a {
+	color: #ffffff;
+}
+article .entry-title,
+article .entry-title a {
+	color: #ffffff;
+}
+.entry-meta {
+	color: #cccccc;
+}
+.entry-meta a {
+	color: #ffffff;
+}
+.entry-meta .comments-link {
+	border-color: #000000;
+}
+.tags a {
+	border-color: #000000;
+}
+
+/* Images */
+#wrapper .gallery a img {
+	border-color: #000000;
+}
+
+/* =Comments
+----------------------------------------------- */
+
+/* Comment List */
+#comments .comment-body {
+	border-color: #000000;
+}
+#comments .comment-body .comment-meta a {
+	color: #ffffff;
+}
+
+/* Children */
+#comments ul.children {
+	border-color: #000000;
+}
+
+/* =Featured
+-------------------------------------------------------------- */
+
+#featured {
+	background: #2e2e2e;
+}
+
+/* =Main
+-------------------------------------------------------------- */
+
+#main {
+	background: #2e2e2e;
+}
+#featured_below {
+	background: #2e2e2e;
+}
+
+/* Breadcrumbs */
+.breadcrumb a {
+	color: #cccccc;
+	border-bottom: 1px dotted #000000;
+}
+.breadcrumb .home-link {
+	background-image: url(../images/home-ffffff.png);
+}
+@media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+		only screen and (-moz-min-device-pixel-ratio: 1.5),
+		only screen and (-o-min-device-pixel-ratio: 1.5),
+		only screen and (min-device-pixel-ratio: 1.5),
+		only screen and (min-resolution: 1.5dppx) {
+	.breadcrumb .home-link {
+		background-image: url(../images/home-ffffff_2x.png);
+		background-size: 10px 10px;
+	}
+}
+
+/* =Widgets
+----------------------------------------------- */
+
+.widget {
+	clear: both;
+	margin: 0 0 .75em 0;
+}
+
+/* Lists */
+.widget ul li a {
+	border-color: #000000;
+}
+
+/* Fixed Sidebar */
+.fixed-sidebar .widget {
+	background-color: #3a3a3a;
+}
+
+/* Custom Menu Widget */
+.fixed-sidebar .widget_nav_menu .menu > li,
+.element-columns .widget_nav_menu .menu > li {
+	border-color: #000000;
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#bottom {
+	background-color: #3a3a3a;
+	border-color: #000000;
+}
+
+/* =Builder
+----------------------------------------------- */
+
+article .element-slider-standard .element-inner,
+article .element-slider-nivo .element-inner,
+article .element-post_list_slider .element-inner,
+article .element-post_grid_slider .element-inner,
+.element .element-slider-standard .element-inner,
+.element .element-slider-nivo .element-inner,
+.element .element-post_list_slider .element-inner,
+.element .element-post_grid_slider .element-inner {
+	border-color: #000000;
+}
+
+/* Divider */
+.divider-dashed,
+.divider-solid {
+	border-color: #000000;
+}
+
+/* Slider */
+.standard-slider-wrapper .slides-wrapper,
+.tb-nivo-slider-wrapper .slides-wrapper {
+	background: transparent;
+}
