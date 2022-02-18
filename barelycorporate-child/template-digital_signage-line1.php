@@ -11,23 +11,26 @@
 	<meta http-equiv="Expires" content="0" />
 	<!-- simple styling to remove scroll bars -->
 	<style>
+		iframe, video, img {
+			overflow: hidden !important;
+		}
 		.container {
-			  position: relative;
-			  overflow: hidden;
-			  width: 100%;
-			  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-			}
+		  position: relative;
+		  overflow: hidden;
+		  width: 100%;
+		  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+		}
 
-			/* Then style the iframe to fit in the container div with full height and width */
-			.responsive-iframe {
-			  position: absolute;
-			  top: 0;
-			  left: 0;
-			  bottom: 0;
-			  right: 0;
-			  width: 100%;
-			  height: 100%;
-			}
+		/* Then style the iframe to fit in the container div with full height and width */
+		.responsive-iframe {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  bottom: 0;
+		  right: 0;
+		  width: 100%;
+		  height: 100%;
+		}
 	</style>
 </head>
 <div class="container">
@@ -50,7 +53,7 @@
 
 			if(get_field('google_media')) {
 				$url = get_field('google_media');
-				$url = str_replace(array('/pub?', '/edit?usp=sharing'), '/embed?', $url)
+				$url = str_replace(array('/pub?', '/edit?usp=sharing'), '/embed?', $url);
 				?>
 					<iframe src="<?php echo $url ?>" class="responsive-iframe"></iframe>
 				<?php
