@@ -276,9 +276,18 @@ Simple list Teacher Course Directory Styles
 }
 .staff-member-listing .personalvCard ul {
 	padding-left: 0;
+	font-size: 1em;
 	list-style: none;
 }
-
+.staff-member-listing .personalvCard .name {
+	font-size: 1rem;
+}
+.staff-member-listing .personalvCard .title {
+	font-size: .9rem;
+}
+.staff-member-listing .personalvCard .speaksSpanish, .staff-member-listing .personalvCard .website, .staff-member-listing .personalvCard .email {
+	font-size: .8rem;
+}
 
 
 
@@ -417,7 +426,7 @@ ul#menu-james-rees-menu li {
 .tiles-container {
 	display:flex;
 	flex-wrap:wrap;
-	
+
 }
 .tiles-container .tile {
 	width: 33%;
