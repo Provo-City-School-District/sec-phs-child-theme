@@ -31,8 +31,8 @@ add_filter('mce_buttons_2','myplugin_tinymce_buttons');
 /* shortcode to list child pages [wpb_childpages]
 /*-------------------------------------------------------*/
 
-function wpb_list_child_pages() { 
-global $post; 
+function wpb_list_child_pages() {
+global $post;
 if ( is_page() && $post->post_parent )
 	//$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
 //else
@@ -62,7 +62,7 @@ add_filter( 'manage_pages_columns', 'modified_column_register' );
 function modified_column_display( $column_name, $post_id ) {
 	switch ( $column_name ) {
 	case 'Modified':
-		global $post; 
+		global $post;
 	       	echo '<p class="mod-date">';
 	       	echo '<em>'.get_the_modified_date().' '.get_the_modified_time().'</em><br />';
 			echo '<small>' . esc_html__( 'by ', 'show_modified_date_in_admin_lists' ) . '<strong>'.get_the_modified_author().'<strong></small>';
@@ -93,7 +93,7 @@ add_filter( 'manage_edit-page_sortable_columns', 'modified_column_register_sorta
 /* Shortcode for Legacy Calendar [legacy_calendar]
 /*-------------------------------------------------------*/
 
-function google_legacy_calendar() { 
+function google_legacy_calendar() {
 	echo '<iframe src="https://calendar.google.com/calendar/embed?height=800&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;src=cGhzcHVwc0BnbWFpbC5jb20&amp;color=%237986CB" style="border-width:0" width="900" height="800" frameborder="0" scrolling="no"></iframe>';
 }
 add_shortcode('legacy_calendar', 'google_legacy_calendar');
@@ -143,22 +143,22 @@ add_shortcode( 'ada_blurb', 'ada_blurb' );
 
 	//Add the Length column, next to the Title column:
 
-add_filter('manage_post_posts_columns', function ( $columns ) 
+add_filter('manage_post_posts_columns', function ( $columns )
 {
     $_columns = [];
 
     foreach( (array) $columns as $key => $label )
     {
-        $_columns[$key] = $label; 
+        $_columns[$key] = $label;
         if( 'title' === $key )
-            $_columns['wpse_post_content_length'] = __( 'Length' );     
+            $_columns['wpse_post_content_length'] = __( 'Length' );
     }
     return $_columns;
 } );
 
 	//Fill that column with the post content length values:
 
-add_action( 'manage_post_posts_custom_column', function ( $column_name, $post_id ) 
+add_action( 'manage_post_posts_custom_column', function ( $column_name, $post_id )
 {
     if ( $column_name == 'wpse_post_content_length')
         echo mb_strlen( get_post( $post_id )->post_content );
@@ -167,7 +167,7 @@ add_action( 'manage_post_posts_custom_column', function ( $column_name, $post_id
 
 	//Make our Length column orderable:
 
-add_filter( 'manage_edit-post_sortable_columns', function ( $columns ) 
+add_filter( 'manage_edit-post_sortable_columns', function ( $columns )
 {
   $columns['wpse_post_content_length'] = 'wpse_post_content_length';
   return $columns;
@@ -179,10 +179,10 @@ add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
     $_orderby = $q->get( 'orderby' );
     $_order   = $q->get( 'order' );
 
-    if( 
-           is_admin() 
-        && $q->is_main_query() 
-        && 'wpse_post_content_length' === $_orderby 
+    if(
+           is_admin()
+        && $q->is_main_query()
+        && 'wpse_post_content_length' === $_orderby
         && in_array( strtolower( $_order ), [ 'asc', 'desc' ] )
     ) {
         global $wpdb;
@@ -195,22 +195,22 @@ add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
 
 	//Add the Length column, next to the Title column:
 
-add_filter('manage_page_posts_columns', function ( $columns ) 
+add_filter('manage_page_posts_columns', function ( $columns )
 {
     $_columns = [];
 
     foreach( (array) $columns as $key => $label )
     {
-        $_columns[$key] = $label; 
+        $_columns[$key] = $label;
         if( 'title' === $key )
-            $_columns['wpse_post_content_length'] = __( 'Length' );     
+            $_columns['wpse_post_content_length'] = __( 'Length' );
     }
     return $_columns;
 } );
 
 	//Fill that column with the post content length values:
 
-add_action( 'manage_page_posts_custom_column', function ( $column_name, $post_id ) 
+add_action( 'manage_page_posts_custom_column', function ( $column_name, $post_id )
 {
     if ( $column_name == 'wpse_post_content_length')
         echo mb_strlen( get_post( $post_id )->post_content );
@@ -219,7 +219,7 @@ add_action( 'manage_page_posts_custom_column', function ( $column_name, $post_id
 
 	//Make our Length column orderable:
 
-add_filter( 'manage_edit-page_sortable_columns', function ( $columns ) 
+add_filter( 'manage_edit-page_sortable_columns', function ( $columns )
 {
   $columns['wpse_post_content_length'] = 'wpse_post_content_length';
   return $columns;
@@ -231,10 +231,10 @@ add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
     $_orderby = $q->get( 'orderby' );
     $_order   = $q->get( 'order' );
 
-    if( 
-           is_admin() 
-        && $q->is_main_query() 
-        && 'wpse_post_content_length' === $_orderby 
+    if(
+           is_admin()
+        && $q->is_main_query()
+        && 'wpse_post_content_length' === $_orderby
         && in_array( strtolower( $_order ), [ 'asc', 'desc' ] )
     ) {
         global $wpdb;
@@ -259,7 +259,7 @@ function directory_func($atts) {
 	$directory_url = "{$category['url']}";
 	return file_get_contents($directory_url);
 }
-add_shortcode( 'directory', 'directory_func' );// Favicon
+add_shortcode( 'directory', 'directory_func' );
 /*-------------------------------------------------------*/
 // page for view all digital signage
 /*-------------------------------------------------------*/
@@ -290,6 +290,8 @@ function digitalsignage_viewall(){
     </div>
     <?php
 }
+/*==========================================================================================
+// Favicon
 ============================================================================================*/
 function pcsd_add_favicon(){ ?>
   <!-- Custom Favicons -->
